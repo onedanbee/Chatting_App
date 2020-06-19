@@ -1,5 +1,10 @@
-import * as React from "react";
+import React from "react";
+import Main from "./pages/Main";
 
 export const App = () => {
-  return <div>hello</div>;
+  return (
+    <div>
+      <Main></Main>
+    </div>
+  );
 };

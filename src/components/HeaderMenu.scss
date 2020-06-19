@@ -1,0 +1,17 @@
+.headerMenu {
+  border: 1px solid red;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  ul {
+    list-style: none;
+    position: absolute;
+    left: 900px;
+  }
+  li {
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid green;
+    display: inline-block;
+  }
+}
