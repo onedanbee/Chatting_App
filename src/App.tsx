@@ -1,10 +1,6 @@
 import React from "react";
-import Main from "./pages/Main";
+import "./App.scss";
 
 export const App = () => {
-  return (
-    <div>
-      <Main></Main>
-    </div>
-  );
+  return <div></div>;
 };

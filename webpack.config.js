@@ -36,16 +36,18 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(jp(e)?g|png|gif|svg)$/,
         loader: "file-loader",
         options: {
           name: "assets/img/[name].[ext]?[hash]",
         },
       },
+
       {
         enforce: "pre",
         test: /\.js$/,
-        loader: "source-map-loader",
+        loader: ["source-map-loader", "eslint-loader"],
+        exclude: /node_modules/,
       },
       {
         test: /\.(sa|sc|c)ss$/,
